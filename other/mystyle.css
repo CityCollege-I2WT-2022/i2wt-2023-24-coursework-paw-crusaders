@@ -1,0 +1,74 @@
+body {
+    background-color: antiquewhite;
+    margin:auto 0 ;
+    
+}
+nav> ul{
+    list-style-type: none;
+    display:flex;
+}
+
+nav>ul>li{
+    margin-left:5px;
+}
+
+nav>ul>li>a{
+color:black;
+text-decoration: none;
+}
+
+nav:hover{
+    opacity: 100%;
+}
+
+nav {
+    z-index: 1;
+    visibility: visible;
+    position: fixed;
+    left:33%;
+    top:0px;
+    opacity: 40%;
+    list-style-type: none;
+    background-color: turquoise;
+    margin:10px;
+    width:30%;
+    
+}
+
+
+.popup:hover > .dropdown{
+    display:block;
+}
+
+.dropdown {
+ display:none;
+    list-style-type: none;
+    text-decoration: none;
+    color:purple;
+    
+}
+.petEx{
+    height:400px;
+    width:550px;
+}
+.xcoor{
+    display:none;
+
+}
+.ycoor{
+    display:none;
+}
+
+
+.upbutton{
+    position:fixed;
+    bottom:70px;
+    opacity:50%;
+    right:10px;
+    border:none;
+}
+.upbutton:hover{
+    opacity:100%;
+}
+
+

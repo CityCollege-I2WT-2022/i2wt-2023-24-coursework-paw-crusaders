@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="./other/mystyle.css">
+    </head>
+    <body>
+        <a id="top"></a>
+        <nav>
+        <ul >
+            <li><a href="index.html">Home</a></li>
+
+            <li class="popup"><a href="">Adoption</a>
+                
+                <ul class="dropdown">
+                    <li><a href="html/browsePets.html">Browse Pets</a></li>
+                    <li><a href="html/howToAdopt.html">How To Adopt</a></li>
+                    <li> <a href="html/adoptSuccesses.html">Successful Adoptions</a></li>
+                    <li><a href="html/adoptLocation.html">Adoption Centers</a></li>
+            </ul>
+            </li>
+
+            <li class="popup"><a href="">Resources</a>
+            <ul class="dropdown">
+                <li><a href="html/volunteer.html">Volunteering</a></li>
+                <li><a href="html/petCare.html">Pet Care</a></li>
+                <li><a href="html/petFriendlyServices.html">Pet-Friendly Services</a></li>
+                <li> <a href="html/petInsurance.html">Pet Insurance</a></li>
+                <li><a href="html/petBehaviourTips.html">Pet Behavior </a></li>
+            </ul></li>
+
+            <li class="popup"><a href="">More</a>
+                <ul class="dropdown">
+                    <li> <a href="html/eventsPets.html">Events for pets</a></li>
+                    <li> <a href="html/lostPets.html">Lost Pets</a></li>
+                    <li><a href="html/petMemorial.html">Pet Memorial</a></li>
+                    <li> <a href="html/petSell.html">Selling pets</a> </li>   
+                </ul></li>
+
+                <li class="popup"><a href="">Technical</a>
+                    <ul class="dropdown">
+                        <li> <a href="html/aboutUs.html">About Us</a></li>
+                        <li> <a href="html/faq.html">FAQ</a></li>
+                        <li> <a href="html/contactUs.html">Contact Us</a></li>
+                    </ul></li>
+
+            </ul></nav>
+                
+            <div class="browsepetsslide">
+                <a href="html/browsePets.html"><ul>
+                        <li class="browseitem"><img class="petEx" src="images/free-photo-of-dogs-for-adoption.jpeg" ></li>
+                        <li class="browseitem"><img class="petEx" src="images/pexels-photo-3790942.jpeg" ></li>
+                        <li class="browseitem"><img class="petEx" src="images/pexels-photo-7474348.jpeg" ></li>
+                    </ul></a>
+                </div>
+            <script>
+                var BPSitems=document.getElementsByClassName("browseitem");
+                var BPSindex=0;
+               
+                var slideshow=function(){
+                for(var i=0;i<BPSitems.length;i++){
+                    BPSitems[i].style.display="none";
+                }
+                if(BPSindex+1==BPSitems.length){
+                    BPSindex=0;
+                }
+                else {
+                    BPSindex++;
+                }
+                    BPSitems[BPSindex].style.display="block";
+                    setTimeout(slideshow,3000);
+            
+            }
+            slideshow();
+       
+
+            </script>
+    </body>
+</html>
