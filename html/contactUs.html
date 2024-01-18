@@ -1,14 +1,76 @@
 <!DOCTYPE html>
+<!--
+    Hello, my name is Emiliano Sotir, I am first year student at the Computer
+    Science Deprtament and I have created some web pages for our group 
+    project(creating a website).In my top 3 qualities I’d mention being 
+    caring,positive,compassionate especially about the degree that I have choosen. 
+    I enjoy coding,creating web pages, solving problems. Wanting to see myself
+    better and evolving is what keeps me going. Outside of school,
+    I love cycling in the nature, playing chess and travelling. That’s why I choose
+    CS, because I can work from anywhere that I want. In everything that I do,
+    I try to leave a mark of myself, a thing that represents me and my style which
+    is also included in this webpage related to pets. I know this is just a small 
+    piece of the puzzle that is waiting for me ,but I’m excited for more.
+-->
 <html>
+    <html style="height:100%">
 
 <head>
+    <title> Contact Us</title>
     <link rel="stylesheet" type="text/css" href="../other/mystyle.css">
+    <script src="../other/button.js" defer></script>
+    <script src="https://kit.fontawesome.com/14d0813ccb.js" crossorigin="anonymous"></script>
+    <style>
+        .contact{
+    color:aliceblue;
+    
+    margin-top:5%;
+}
+
+.message-us{
+    color:turquoise ;
+    float: left;
+    margin-top: 5%;
+    margin-left: 15%;
+
+} 
+form{
+   float: right;
+   margin-top: 5%;
+   margin-right: 15%;
+   color:turquoise ;
+   
+}
+ input, textarea{
+    
+    width:400px;
+    background-color:white;
+} 
+#submitButton{
+    background-color: orange;
+    color: aliceblue;
+}
+
+.divs{
+    display: flex;
+    flex-direction: column;
+    
+}
+.divs>span{
+    padding-top:36px;
+}
+.bigdiv{
+    display:flex;
+    justify-content: space-evenly;
+}
+    </style>
 </head>
 
 <body>
+    <img id="logo" src="../images/Default_create_me_a_logo_for_my_pet_adopting_website_the_name_1_c86b53ab-5bf3-4d6d-b51b-7ed9afa81dab_0.png">
     <nav>
         <ul >
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
 
             <li class="popup"><a href="">Adoption</a>
                 
@@ -29,7 +91,7 @@
                 <li><a href="petBehaviourTips.html">Pet Behavior </a></li>
             </ul></li>
 
-            <li class="popup"><a href="">More</a>
+            <li class="popup"><a href="">Fireplace</a>
                 <ul class="dropdown">
                     <li>  <a href="eventsPets.html">Events for pets</a></li>
                     <li>    <a href="lostPets.html">Lost Pets</a></li>
@@ -45,6 +107,99 @@
                     </ul></li>
 
             </ul></nav>
-</body>
+            <h1 style="text-align:center;padding-bottom:10px;color:white" >GET IN TOUCH</h1>
+            <div class="bigdiv">
+            <div class="divs">
+                
+                <i id="phone" class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i>
+                <span>
+                    <strong style="color:white">PHONE</strong>
+                    </span><span>
+                        <strong style="color:white">(Monday to Friday, 8am to 2pm)</strong>
+                        
+                        </span><span>
+                        <strong style="color:white">
+                        6999592139
+                        </strong>
+                        </span>
+                
+                
+                    </div><div class="divs">
+                     <i id="email" class="fa-solid fa-message fa-2xl" style="color: #ffffff;"></i>
+
+                     <span>
+                        <strong style="color:white">EMAIL</strong>
+                    </span>
+                    <span>
+                        <strong style="color:white">Request for pet adoption:</strong>
+                        </span>
+                        <span>
+                            <strong style="color:white"> petadoption@gmail.com</strong>
+                            </span>
+                    
+                </div><div class="divs">
+                    <i id="location" class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
+
+                    <span>
+                        <strong style="color:white">ADDRESS</strong>
+                    </span>
+
+                    <span>
+                        <strong style="color:white">Thessaloniki, Greece </strong> 
+                    </span>
+                    <span>
+                        <strong style="color:white">Karaoli ke Dimitriou 121, Evosmos</strong>
+                        </span>
+                </div>
+                   
+               
+                     
+            </div>
+            <div class="message-us">
+            <h1 >Message Us</h1>
+            <p >
+                For every question you have regarding pets (pet adoption,<br> 
+                pet care, pet insurance,pet behaviour, pet memorial), you<br>
+                can email us and our costumer service will respond as soon<br> 
+                as possible.
+
+            </p>
+        </div>
+
+            <form action="" method="post">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
+
+                <label for="lastName">Last Name :</label><br>
+                <input type="text" id="lastName" name="lastName" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea type="message" id="message" name="message" rows="8" cols="30" required ></textarea><br>
+
+                <input id="submitButton" type="submit" value="Submit"> 
+
+
+                
+            </form>
+            <footer style="position:absolute;bottom:0px;"> Join our socials :)&nbsp;&nbsp;&nbsp; 
+                <a target="_blank" href="https://instagram.com">  <img class= "footerimg" src="../images/instagram-removebg-preview.png"></a>
+                <a target="_blank"href="https://linkedin.com">  <img class= "footerimg" src="../images/1000_F_396561934_t1OwjMZHrVY211bHA5uUEAix0F1SyLci-removebg-preview.png"></a>
+                <a target="_blank"href="https://facebook.com"><img class="footerimg" src="../images/63a231592efca78f2bcbc02267eb37be-removebg-preview.png"></a>
+                <a target="_blank"href="https://tiktok.com"> <img class="footerimg" src="../images/Logo-of-the-tiktok-app-on-transparent-background-PNG-removebg-preview.png"></a>
+            </footer>
+      <script>
+        var clickButton = document.getElementById("submitButton");
+        var onClickButton = function(){
+            clickButton.textContent="Submited";
+        }
+        clickButton.addEventListener("click",onClickButton );
+      </script>      
+
+
+            
+        </body>
 
 </html>

@@ -1,14 +1,105 @@
 <!DOCTYPE html>
+<!--
+    Hello, my name is Emiliano Sotir, I am first year student at the Computer
+    Science Deprtament and I have created some web pages for our group 
+    project(creating a website).In my top 3 qualities I’d mention being 
+    caring,positive,compassionate especially about the degree that I have choosen. 
+    I enjoy coding,creating web pages, solving problems. Wanting to see myself
+    better and evolving is what keeps me going. Outside of school,
+    I love cycling in the nature, playing chess and travelling. That’s why I choose
+    CS, because I can work from anywhere that I want. In everything that I do,
+    I try to leave a mark of myself, a thing that represents me and my style which
+    is also included in this webpage related to pets. I know this is just a small 
+    piece of the puzzle that is waiting for me ,but I’m excited for more.
+-->
 <html>
-
+    <html style="height:fit-content">
 <head>
     <link rel="stylesheet" type="text/css" href="../other/mystyle.css">
+    <script src="../other/button.js" defer></script>
+    <title>Pet Care</title>
+    <style>
+        #header{
+            color:white;
+            text-align: center;
+        }
+        #petCarePhoto{
+            max-width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-left: 50%;
+
+
+        }
+        .importancePhoto{
+            position: relative;
+            display: inline-block;  
+        }
+        
+        .importanceText{
+            position: relative;
+            margin-left: 60%;
+            right: 15%;
+            bottom: 60px;
+            background-color: white;
+            padding: 2%;
+
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color:rgb(127, 75, 162);
+            text-align: center;
+
+
+        }
+
+        .petPhotos{
+            height: 350px;
+            border-radius: 250px;
+            
+            
+            
+        }
+        .petCare{
+            color: white;
+            font-size:20px;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        padding: 1%;
+        margin-left: 1%;
+        
+        
+
+        }
+        div>ul{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        div>ul>li{
+            flex:1;
+            list-style: none;
+            padding: 1%;
+            margin-right: 1%; 
+            border: 1px solid #ccc;
+            text-align: center;
+            
+            
+        }
+        
+    
+
+
+        
+    </style>
 </head>
 
 <body>
+    <img id="logo" src="../images/Default_create_me_a_logo_for_my_pet_adopting_website_the_name_1_c86b53ab-5bf3-4d6d-b51b-7ed9afa81dab_0.png">
     <nav>
         <ul >
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
 
             <li class="popup"><a href="">Adoption</a>
                 
@@ -29,7 +120,7 @@
                 <li><a href="petBehaviourTips.html">Pet Behavior </a></li>
             </ul></li>
 
-            <li class="popup"><a href="">More</a>
+            <li class="popup"><a href="">Fireplace</a>
                 <ul class="dropdown">
                     <li>  <a href="eventsPets.html">Events for pets</a></li>
                     <li>    <a href="lostPets.html">Lost Pets</a></li>
@@ -45,6 +136,89 @@
                     </ul></li>
 
             </ul></nav>
+            <h1 id="header">PET CARE TIPS</h1>
+            <div class="importancePhoto">
+            <img src="../images/petCarePhoto.jpg" id="petCarePhoto">
+        </div>
+                <div class="importanceText">
+                <h3>THE IMPORTANCE OF PET CARE</h3>
+                <p>
+                    Pet adoption is crucial for several reasons. Firstly,
+                    it provides loving homes for animals in need, offering 
+                    a second chance to those who may have faced abandonment 
+                    or mistreatment. Additionally, adopting from shelters or 
+                    rescue organizations helps reduce the population of stray 
+                    and homeless animals. Finally, choosing adoption over buying 
+                    from breeders promotes ethical and responsible pet ownership,
+                    contributing to the overall well-being of animals and 
+                    strengthening the bond between pets and their adoptive families.
+                </p>
+           
+            </div>
+            <div class="petCare">
+                <ul>
+                    <li>
+            <img src="../images/petFeeding.jpg" class="petPhotos"> 
+            
+
+            
+            <h4>Provide Proper Nutrition</h4>
+            <p>
+                Feed your pet a balanced and species-appropriate
+                diet. Consult with a vet to determine the best 
+                food for your pet's age, size, and health condition.
+                Ensure access to clean and fresh water at all times.
+
+
+            </p>
+        </li>
+        <li>
+            
+            
+
+            <img src="../images/vetCheckUp.jpg" class="petPhotos"> 
+            <h4>Regular Vet Check-ups</h4>
+            
+            <p>
+                Schedule regular veterinary visits for vaccinations,
+                check-ups, and preventive care.Keep up with parasite
+                prevention (fleas, ticks, worms) and dental care.
+
+
+            </p>
+            
+        </li>
+        <li>
+            <img src="../images/petExercises.jpg" class="petPhotos"> 
+            
+
+            
+            <h4>Regular Exercise</h4>
+            <p>
+                Engage your pet in regular physical activity to
+                maintain a healthy weight and prevent boredom.
+                Dogs, cats, and many small animals benefit  
+                from playtime and daily walks.
+
+
+            </p>
+        </li>
+      
+        
+
+        </ul>
+        </div>
+            
+            
+            
+            
+           
+            <footer> Join our socials :)&nbsp;&nbsp;&nbsp; 
+                <a target="_blank" href="https://instagram.com">  <img class= "footerimg" src="../images/instagram-removebg-preview.png"></a>
+                <a target="_blank"href="https://linkedin.com">  <img class= "footerimg" src="../images/1000_F_396561934_t1OwjMZHrVY211bHA5uUEAix0F1SyLci-removebg-preview.png"></a>
+                <a target="_blank"href="https://facebook.com"><img class="footerimg" src="../images/63a231592efca78f2bcbc02267eb37be-removebg-preview.png"></a>
+                <a target="_blank"href="https://tiktok.com"> <img class="footerimg" src="../images/Logo-of-the-tiktok-app-on-transparent-background-PNG-removebg-preview.png"></a>
+            </footer>
 </body>
 
 </html>

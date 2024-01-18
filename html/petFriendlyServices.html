@@ -1,14 +1,82 @@
 <!DOCTYPE html>
+<!--
+    Hello, my name is Emiliano Sotir, I am first year student at the Computer
+    Science Deprtament and I have created some web pages for our group 
+    project(creating a website).In my top 3 qualities I’d mention being 
+    caring,positive,compassionate especially about the degree that I have choosen. 
+    I enjoy coding,creating web pages, solving problems. Wanting to see myself
+    better and evolving is what keeps me going. Outside of school,
+    I love cycling in the nature, playing chess and travelling. That’s why I choose
+    CS, because I can work from anywhere that I want. In everything that I do,
+    I try to leave a mark of myself, a thing that represents me and my style which
+    is also included in this webpage related to pets. I know this is just a small 
+    piece of the puzzle that is waiting for me ,but I’m excited for more.
+-->
 <html>
-
+    <html style="height:cover">
 <head>
+    <title>Pet Friendly Servies</title>
     <link rel="stylesheet" type="text/css" href="../other/mystyle.css">
+    <script src="../other/button.js" defer></script>
+    <style>
+        .pageDescription{
+            text-align: center;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            border: 3px white double;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left:10%;
+            margin-right: 10%;
+            
+        }
+        .petfriendly{
+        float:left;
+        margin-top:9%;
+        color: turquoise;
+        margin-bottom: 3%;
+        }
+        
+        #pin{
+        position:absolute;
+        visibility: hidden;
+        z-index: 1;
+        }   
+        .map{
+        position:absolute;
+        left: 45%;
+        top: 40%;
+        margin-right:8%;
+        margin-left:5%; 
+        margin-bottom: 3%;
+        
+        }
+        .petEx{
+        position:absolute;
+        left: 15%;
+        top: 40%;
+        height:350px;
+        width:450px;
+        
+        }
+        .text{
+            position: absolute;
+            left:15%;
+            top:80%;
+            font-size: 30px;
+            
+        }
+        span>ul{
+            display: grid;
+        }
+    </style>
 </head>
 
 <body>
+    <img id="logo" src="../images/Default_create_me_a_logo_for_my_pet_adopting_website_the_name_1_c86b53ab-5bf3-4d6d-b51b-7ed9afa81dab_0.png">
     <nav>
         <ul >
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
 
             <li class="popup"><a href="">Adoption</a>
                 
@@ -29,7 +97,7 @@
                 <li><a href="petBehaviourTips.html">Pet Behavior </a></li>
             </ul></li>
 
-            <li class="popup"><a href="">More</a>
+            <li class="popup"><a href="">Fireplace</a>
                 <ul class="dropdown">
                     <li>  <a href="eventsPets.html">Events for pets</a></li>
                     <li>    <a href="lostPets.html">Lost Pets</a></li>
@@ -45,6 +113,120 @@
                     </ul></li>
 
             </ul></nav>
-</body>
+            <div class="pageDescription">
+            <h1>PET FRIENDLY SERVICES</h1>
+            <p>
+                
+                Welcome to our dedicated page celebrating the wonderful
+                world of pet-friendly services! Here, we curate a collection
+                of offerings designed to enhance the lives of our beloved 
+                animal companions. From pet-friendly accommodations and
+                grooming services to health insurance options, we've 
+                gathered a variety of resources to cater to the diverse 
+                needs of pets and their owners. Whether you're seeking advice 
+                on training, looking for a cozy place to stay with your furry
+                friend, or exploring the latest in pet wellness, our page is your
+                go-to destination for all things pet-friendly. Join us in celebrating
+                the joy and companionship that pets bring to our lives, and discover a 
+                wealth of services that prioritize the well-being and happiness of our
+                four-legged family members.
+            </p>
+        </div>
+        
+        <div class="petfriendly">
+            <ul>
+                
+                <li class="browseitem">
+                    <span class="xcoor">50</span>
+                    <span class="ycoor">250</span>
+                    <img class="petEx" src="../images/petHotel.png" >
+                    <span class="text">ON Residence<br>
+                        <img src="../images/pin.png"> Edessis Street. , Thessaloniki
+                    </span> 
+                    </li>
+                <li class="browseitem">
+                    <span class="xcoor">60</span>
+                    <span class="ycoor">150</span>
+                    <img class="petEx" src="../images/petAtVet.jpg" >
+                    <span class="text">Pet Care Center<br>
+                        <img src="../images/pin.png"> Kastron Street , Thessaloniki
+
+                    </span>
+                </li>
+                <li class="browseitem">
+                    <span class="xcoor">70</span>
+                    <span class="ycoor">100</span>
+                    <img class="petEx" src="../images/petSitter.jpg" >
+                    <span class="text">Thessaloniki Pet Sitting<br>
+                        <img src="../images/pin.png"> Korai Street  , Thessaloniki
+                    </span>
+                </li>
+                <li class="browseitem">
+                    <span class="xcoor">70</span>
+                    <span class="ycoor">450</span>
+                    <img class="petEx" src="../images/petHotel1.jpg" >
+                    <span class="text">ONOMA Hotel<br>
+                        <img src="../images/pin.png"> Nikis Avenue, Thessaloniki
+                    </span>
+                </li>
+                <li class="browseitem">
+                    <span class="xcoor">40</span>
+                    <span class="ycoor">200</span>
+                    <img class="petEx" src="../images/petPersonalTrainer.jpg" >
+                    <span class="text">Dog Trainer School<br>
+                        <img src="../images/pin.png"> Passalidi Street, Thessaloniki
+                    </span>
+                </li>
+                <li class="browseitem">
+                    <span class="xcoor">70</span>
+                    <span class="ycoor">300</span>
+                    <img class="petEx" src="../images/petRestaurant.jpg" >
+                    <span class="text">Panorama Bar & Restaurant<br>
+                        <img src="../images/pin.png"> Voulgari Street , Thessaloniki
+                    </span>
+                </li>
+                
+            </ul>
+        </div>
+            <div class="map">
+                <img src="../images/map.jpg" >
+                <img src="../images/pin.png" id="pin">
+                </div>
+                <footer style="position: absolute;bottom:0px;"> Join our socials :)&nbsp;&nbsp;&nbsp; 
+                    <a target="_blank" href="https://instagram.com">  <img class= "footerimg" src="../images/instagram-removebg-preview.png"></a>
+                    <a target="_blank"href="https://linkedin.com">  <img class= "footerimg" src="../images/1000_F_396561934_t1OwjMZHrVY211bHA5uUEAix0F1SyLci-removebg-preview.png"></a>
+                    <a target="_blank"href="https://facebook.com"><img class="footerimg" src="../images/63a231592efca78f2bcbc02267eb37be-removebg-preview.png"></a>
+                    <a target="_blank"href="https://tiktok.com"> <img class="footerimg" src="../images/Logo-of-the-tiktok-app-on-transparent-background-PNG-removebg-preview.png"></a>
+                </footer>
+        <script>
+            var items=document.getElementsByClassName("browseitem");
+            var getPin=document.getElementById("pin");
+            var index=0;
+            var xcoor=document.getElementsByClassName("xcoor");
+            var ycoor=document.getElementsByClassName("ycoor");
+            var slideshow=function(){
+                    for(var i=0;i<items.length;i++){
+                        items[i].style.display="none";
+                    }
+                    if(index+1==items.length){
+                     index=0;
+                    }
+                    else {
+                     index++;
+                    }
+                    items[index].style.display="block";
+                    getPin.style.top=xcoor[index].innerHTML+"px";
+                    getPin.style.left=ycoor[index].innerHTML+"px";
+                    getPin.style.visibility="visible";
+                    setTimeout(slideshow,5000);
+                    
+                }
+                slideshow();
+           
+        
+                </script>
+
+           
+        </body>
 
 </html>

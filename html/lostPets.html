@@ -1,32 +1,74 @@
 <!DOCTYPE html>
+<!-- 
+    Hello, I am Stefano Mihallari and this is one of the pages I worked on for my website. I have chosento pursue the  Computer Science route in University of York 
+because I am passionte and enjoy doing it, namely discovering problems, figuring solutions out and then coding them.As a student I always aim to better myself and arm myself with
+sharper weapons regarding the coding world.What I want to do in CS lies unsolved between Cybersecurity and Data Science.Outside of school, my hobbies lie in both playing
+and watching the gaming world,particularly FPS games such as Counter Strike(https://www.counter-strike.net/cs2) and I also enjoy playing football, the team I support is 
+Real Madrid(https://www.realmadrid.com/en-US). Whether it is coding late into the night while enjoying home-cooked meals next to a fireplace, or the excitement within me when my team
+wins a match, I have tried to showcase it through my work in the website. Creating a pet adopting website as a means to help our friends in need employs both my self-reflection
+as a person and hopefully a sweet glimpse at the beggining of my journey as a programmer. Feel free to dabble with anything you like :)
+-->
 <html>
 
 <head>
+    <title>Lost Pets</title>
     <link rel="stylesheet" type="text/css" href="../other/mystyle.css">
     <style>
+        body{
+            background-color:#9dade7 !important;
+        }
+        .petEx{
+        position:absolute;
+        height:250px;
+        width:450px;
+        border-radius: 100px;
+        }
         .lostpetsslide{
-        position:fixed;
-        top:100px;
-        
-        left:50%;
+        position:absolute;
+        top:95px;
+        left:60%;
+        }
+        .species,.owner,.time,.size,.color,.name{
+            display:none;
         }
         #pin{
 	    position:absolute;
 	    visibility: hidden;
 	    z-index: 1;
         }   
+        span>ul{
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* using grid to seperate the li's, respectively 2 on one row. */
+            grid-gap: 10px;
+            position:absolute;
+            right: 20%;
+            top:365px;
+        }
         .map{
-        position:fixed;
+        position:absolute;
         top:110px;
-        left:20%; 
+        left:10%; 
+        }
+        .speech{
+        position:absolute;
+        top:550px;
+        font-size:20px;
+        margin-left:15%;
+        border:5px dashed red;
+        padding:10px;   
+        background-color: rgb(172, 189, 236);
         }
     </style>
+    <script src="../other/button.js" defer></script>
 </head>
 
-<body>
+<body style="background:#a4b0da ;">
+    <img id="logo" src="../images/Default_create_me_a_logo_for_my_pet_adopting_website_the_name_1_c86b53ab-5bf3-4d6d-b51b-7ed9afa81dab_0.png">
     <nav>
         <ul >
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
 
             <li class="popup"><a href="">Adoption</a>
                 
@@ -47,7 +89,7 @@
                 <li><a href="petBehaviourTips.html">Pet Behavior </a></li>
             </ul></li>
 
-            <li class="popup"><a href="">More</a>
+            <li class="popup"><a href="">Fireplace</a>
                 <ul class="dropdown">
                     <li>  <a href="eventsPets.html">Events for pets</a></li>
                     <li>    <a href="lostPets.html">Lost Pets</a></li>
@@ -65,9 +107,13 @@
             </ul></nav>
             <div class="lostpetsslide">
                 <ul>
-                        <li class="browseitem"><span class="xcoor" >150</span> <span class="ycoor">250</span><img class="petEx" src="../images/free-photo-of-dogs-for-adoption.jpeg" ></li>
-                        <li class="browseitem"><span class="xcoor" > 50</span> <span class="ycoor">350</span><img class="petEx" src="../images/pexels-photo-3790942.jpeg" ></li>
-                        <li class="browseitem"><span class="xcoor" >550</span> <span class="ycoor">150</span><img class="petEx" src="../images/pexels-photo-7474348.jpeg" ></li>
+                        <li class="browseitem">
+                            <span class="name">Jordy</span><span class="species">Dog</span><span class="color">Brown</span><span class="size">Average</span><span class="time">10:52AM 12.11.1996</span><span class="owner">306975761234</span>
+                            <span class="xcoor">150</span><span class="ycoor">200</span><img class="petEx" src="../images/free-photo-of-dogs-for-adoption.jpeg" ></li>
+                        <li class="browseitem"><span class="xcoor">50</span><span class="ycoor">150</span><img class="petEx" src="../images/pexels-photo-1254140.jpeg" ></li>
+                        <span class="name">Jack</span><span class="species">Dog</span><span class="color">Brown and white</span><span class="size">Small</span><span class="time">11:21AM 30.12.2023</span><span class="owner">306987694590</span>
+                        <li class="browseitem"><span class="xcoor">200</span><span class="ycoor">50</span><img class="petEx" src="../images/pexels-photo-7474348.jpeg" ></li>
+                        <span class="name">Jill</span><span class="species">Dog</span><span class="color">Cream</span><span class="size">Big</span><span class="time">05:24PM 10.11.2023</span><span class="owner">306984561546</span>
                     </ul>
                 </div>
                 
@@ -75,43 +121,70 @@
                     <img src="../images/map.jpg" >
                     <img src="../images/pin.png" id="pin">
                 </div>
+              
+                <span><ul>
+                    <li>Name: </li><li id="Name"></li>
+                    <li>Species: </li><li id="Species"></li>
+                    <li>Color:</li><li id="Color"></li>
+                    <li>Size: </li> <li id="Size"></li>
+                    <li>Time:</li><li id="Time"></li>
+                    <li>Owner Phone: </li><li id="Phone"></li>
+                </ul>
+                </span>
+                <div class="speech">Dear community,<br>
+
+                    Every lost pet has a story, and we believe in the power of community to rewrite those stories with happy endings. <br>
+                    Join us in our mission to reunite families with their beloved companions. <br>
+                    Explore the map, share our page, and be an advocate for the voiceless.
+                    <br> Together, we can bring comfort, hope, and wagging tails back to our neighborhoods.
+                    <br>Thank you for being a beacon of compassion.<br>
+                    Paw Crusaders</div>
+                    <footer style="position:absolute;bottom:0px;"> Join our socials :)&nbsp;&nbsp;&nbsp; 
+                        <a target="_blank" href="https://instagram.com">  <img class= "footerimg" src="../images/instagram-removebg-preview.png"></a>
+                        <a target="_blank"href="https://linkedin.com">  <img class= "footerimg" src="../images/1000_F_396561934_t1OwjMZHrVY211bHA5uUEAix0F1SyLci-removebg-preview.png"></a>
+                        <a target="_blank"href="https://facebook.com"><img class="footerimg" src="../images/63a231592efca78f2bcbc02267eb37be-removebg-preview.png"></a>
+                        <a target="_blank"href="https://tiktok.com"> <img class="footerimg" src="../images/Logo-of-the-tiktok-app-on-transparent-background-PNG-removebg-preview.png"></a>
+                    </footer>
             <script>
                 var BPSitems=document.getElementsByClassName("browseitem");
                 var BPSindex=0;
-               
+                var BPSxcoor=document.getElementsByClassName("xcoor");
+                var BPSycoor=document.getElementsByClassName("ycoor");
+                var getPin=document.getElementById("pin");
+                var getName=document.getElementsByClassName("name");
+                var getSpecies=document.getElementsByClassName("species");
+                var getColor=document.getElementsByClassName("color");
+                var getSize=document.getElementsByClassName("size");
+                var getTime=document.getElementsByClassName("time");
+                var getOwner=document.getElementsByClassName("owner");
                 var slideshow=function(){
-                for(var i=0;i<BPSitems.length;i++){
-                    BPSitems[i].style.display="none";
-                }
-                if(BPSindex+1==BPSitems.length){
-                    BPSindex=0;
-                }
-                else {
-                    BPSindex++;
-                }
+                    for(var i=0;i<BPSitems.length;i++){
+                        BPSitems[i].style.display="none";
+                    }
+                    if(BPSindex+1==BPSitems.length){
+                     BPSindex=0;
+                    }
+                    else {
+                     BPSindex++;
+                    }
                     BPSitems[BPSindex].style.display="block";
-                    setTimeout(slideshow,3000);
-            
-            }
-            slideshow();
-            var getPin=document.getElementById("pin");
-            var x=getElementsByClassName("xcoor")[0];
-            var y=getElementsByClassName("ycoor")[0];
-            var movePin=function(){
-                getPin.style.visibility="visible";
-                for(var i=0;i<BPSitems.length;i++){
-                x[BPSindex].innerHTML;
-                y[BPSindex].innerHTML;
-                getPin.style.top=x+ "px";
-                getpin.style.left=y+"px";
-                
-             }
-             setTimeout(movePin,3000);
-        }
-        movePin();
-
-       
-
+                    getPin.style.top=BPSxcoor[BPSindex].innerHTML+"px";
+                    getPin.style.left=BPSycoor[BPSindex].innerHTML+"px";
+                    getPin.style.visibility="visible";
+                   
+                    document.getElementById("Phone").innerHTML=getOwner[BPSindex].innerHTML;
+                    document.getElementById("Color").innerHTML=getColor[BPSindex].innerHTML;
+                    document.getElementById("Size").innerHTML=getSize[BPSindex].innerHTML;
+                    document.getElementById("Species").innerHTML=getSpecies[BPSindex].innerHTML;
+                    document.getElementById("Time").innerHTML=getTime[BPSindex].innerHTML;
+                    document.getElementById("Name").innerHTML=getName[BPSindex].innerHTML;
+                    console.log(getOwner[BPSindex]);
+                    console.log(document.getElementsByClassName("color")[BPSindex]);
+                    setTimeout(slideshow,7000);
+                    
+                }
+                slideshow();
+                // just an extensive application of what was demonstrated in class.
             </script>
 </body>
 
